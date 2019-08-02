@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<math.h>
 
-void FacTor(int Num);
+void PFacTor(int Num);
 
 void main (void)
 {
     int InPut;
     printf("Enter Number For Prime Factors:");
     scanf("%i", &InPut);
-    FacTor(InPut);
+    PFacTor(InPut);
     printf("\n");
 }
 
-void FacTor(int Num)
+void PFacTor(int Num)
 {
     int Try = 2;
     if (Num % Try == 0)
