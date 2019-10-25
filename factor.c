@@ -1,15 +1,26 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<math.h>
+
 
 void PFacTor(int Num);
 
-void main (void)
+void main (int argc, char *argv[])
 {
     int InPut;
-    printf("Enter Number For Prime Factors:");
+    if (argc  != 1)
+    {  
+        InPut = atoi(argv[1]);
+        PFacTor(InPut);
+        printf("\n");
+    }
+    else
+    {
+    printf("Enter Number For Prime Factors: ");
     scanf("%i", &InPut);
     PFacTor(InPut);
     printf("\n");
+    }
 }
 
 void PFacTor(int Num)
